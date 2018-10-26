@@ -38,7 +38,7 @@ export const getSmurf = () => {
 }
 
 export const createSmurf = (smurf) => {
-  const promise = axios.get('http://localhost:3333/smurfs', smurf)
+  const promise = axios.post('http://localhost:3333/smurfs', smurf)
 
   return dispatch => {
     dispatch({ type: CREATING_SMURF });

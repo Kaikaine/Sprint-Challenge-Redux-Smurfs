@@ -71,7 +71,7 @@ class App extends Component {
         </form>
 
         <ul>
-          {console.log(this.props.smurfs)}
+          {console.log(this.props)}
           {this.props.smurfs.map((smurf, index) => {
             return <li key={index}>{smurf.name} <br /> {smurf.age} <br /> {smurf.height} <br /> <hr /></li>;
           })}

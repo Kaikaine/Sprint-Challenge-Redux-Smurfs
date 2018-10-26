@@ -47,7 +47,6 @@ const smurfReducer = (state = initialState, action) => {
         creatingSmurf: true,
         createdSmurf: false,
         error: null,
-        smurfs: action.payload
       })
     case CREATED_SMURF:
       return Object.assign({}, state, {
@@ -56,7 +55,7 @@ const smurfReducer = (state = initialState, action) => {
         creatingSmurf: false,
         createdSmurf: true,
         error: null,
-        smurfs: action.payload
+        smurfs: action.payload         
       })
     case ERROR:
       return Object.assign({}, state, {
